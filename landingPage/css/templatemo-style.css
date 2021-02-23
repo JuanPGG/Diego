@@ -1153,7 +1153,9 @@ header {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  #tutorial .row{
+    padding: 80px 20px;
+  }
   #blog {
     padding-left: 15px;
     padding-right: 15px;

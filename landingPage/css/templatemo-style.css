@@ -46,6 +46,10 @@ p {
   margin-bottom: 60px;
 }
 
+.section-heading .circle-tutorial{
+  font-size: 28px;
+}
+
 .section-heading h1 {
   margin-top: 0px;
   font-size: 32px;
@@ -57,7 +61,7 @@ p {
 .section-heading em {
   font-style: normal;
   font-weight: 700;
-  color: #45489a;
+  color: var(--blue);
 }
 
 .section-heading p {
@@ -72,7 +76,7 @@ p {
 .white-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #45489a;
+  color: var(--blue);
   text-transform: capitalize;
   background-color: #fff;
   display: inline-block;
@@ -85,7 +89,7 @@ p {
 }
 
 .white-button a:hover {
-  background-color: #45489a;
+  background-color: var(--blue);
   color: #fff;
 }
 
@@ -94,7 +98,7 @@ p {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: var(--blue);
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -106,7 +110,7 @@ p {
 
 .accent-button a:hover {
   background-color: #fff;
-  color: #45489a;
+  color: var(--blue);
 }
 
 header {
@@ -185,7 +189,7 @@ header {
   float: left;
   height: 100%;
   position: fixed;
-  background-color: rgba(7, 33, 70, .8);
+  background-color: rgba(7, 33, 70, .95);
   z-index: 10;
   box-shadow: 0 0 6px 0 #000;
 }
@@ -313,7 +317,7 @@ header {
 }
 
 .sidebar-navigation .social-icons li a:hover {
-  color: #45489a;
+  color: var(--blue);
 }
 
 
@@ -491,7 +495,7 @@ header {
 }
 
 #featured .owl-dots .active span {
-  background-color: #45489a!important;
+  background-color: var(--blue)!important;
 }
 
 #featured .owl-dots button {
@@ -527,7 +531,7 @@ header {
 }
 
 #featured .owl-nav span:hover {
-  background-color: #45489a;
+  background-color: var(--blue);
   color: #fff;
 }
 
@@ -627,7 +631,7 @@ header {
 /* Video Presentation Style */
 
 #video {
-  text-align: center;
+  text-align: left;
   background-color: #f4f4f4;
   padding: 100px 60px;
 }
@@ -723,8 +727,103 @@ header {
   transition: all .6s .8s;
 }
 
+/* Tutorial Style */
+
+#tutorial {
+  text-align: left;
+  overflow: hidden;
+  padding-top: 0;
+}
+#tutorial .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  position: relative;
+}
+
+#tutorial .row:nth-child(odd){
+  background-color: rgba(12,12,12,0.9);
+  flex-direction: row;
+}
+
+#tutorial .row:nth-child(even){
+  background-color: #f4f4f4;
+  flex-direction: row-reverse;
+}
 
 
+#tutorial .section-heading {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+#tutorial .section-heading .circle-tutorial{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--blue);
+  color:  #f4f4f4;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tutorial .row:nth-child(odd) .section-heading .circle-tutorial{
+  background: #f4f4f4;
+  color: rgba(12,12,12,0.9);
+  left: 0;
+}
+
+#tutorial .row:nth-child(odd) .section-heading h1 {
+  margin-top: 0px;
+  font-size: 32px;
+  color: #f4f4f4;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#tutorial .row:nth-child(odd) .section-heading em {
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+#tutorial .row:nth-child(odd) .text-content p{
+  color: #f4f4f4;
+}
+
+#tutorial .box-tutorial{
+  width: 100%;
+}
+
+#tutorial .image-tutorial{
+  width: 100%;
+  object-fit: contain;
+}
+
+#tutorial .arrow-down{
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  font-size: 32px;
+  animation: arrowMove 600ms linear alternate infinite;
+}
+
+#tutorial .row:nth-child(odd) .arrow-down i{
+  color: #f4f4f4;
+}
+@keyframes arrowMove{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
 
 /* Blog Style */
 
@@ -741,7 +840,7 @@ header {
   height: 90px;
   width: 100%;
   background-color: #eee;
-  border-bottom: 10px solid #45489a;
+  border-bottom: 10px solid var(--blue);
 }
 
 #blog .tabs li {
@@ -767,7 +866,7 @@ header {
 }
 
 #blog .tabs a:hover {
-  color: #45489a;
+  color: var(--blue);
 }
 
 
@@ -776,7 +875,7 @@ header {
 }
 
 #blog .tabs .active {
-  background-color: #45489a;
+  background-color: var(--blue);
   color: #fff;
 }
 
@@ -895,7 +994,7 @@ header {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: var(--blue);
   display: inline-block;
   height: 44px;
   line-height: 24px;

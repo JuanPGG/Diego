@@ -110,8 +110,20 @@ jQuery(document).ready(function($) {
 
         $('.button a[href*=#]').on('click', function(e) {
           e.preventDefault();
-          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -0 }, 500, 'linear');
+          $('html, body').animate({ 
+            scrollTop: $($(this).attr('href')).offset().top -0 }, 500, 'linear');
         });
 
+        let tutorialRow = document.querySelectorAll(".tutorial");
+        let tutorialArrowDown = document.querySelectorAll('.arrow-down');
+        tutorialArrowDown[tutorialArrowDown.length-1].style.display = 'none';
 
+        for(let i = 0; i < tutorialArrowDown.length; i++){
+            tutorialArrowDown[i].addEventListener('click', (e) => {
+                // console.log(event.currentTarget);
+                $('html, body').animate({ 
+                    scrollTop: document.getElementById('tutorial').offsetTop + tutorialRow[i+1].offsetTop
+                }, 500, 'linear');
+            });
+        }
 });

@@ -122,7 +122,7 @@ jQuery(document).ready(function($) {
             tutorialArrowDown[i].addEventListener('click', (e) => {
                 // console.log(event.currentTarget);
                 $('html, body').animate({ 
-                    scrollTop: document.getElementById('tutorial').offsetTop + tutorialRow[i+1].offsetTop
+                    scrollTop: document.getElementById('tutorial').offsetTop + tutorialRow[i+1].offsetTop -0
                 }, 500, 'linear');
             });
         }

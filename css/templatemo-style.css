@@ -100,7 +100,7 @@ p {
 }
 
 .white-button a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--blue);
   text-transform: capitalize;
@@ -120,7 +120,7 @@ p {
 }
 
 .accent-button a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
@@ -191,7 +191,7 @@ header {
   background-color: transparent;
 }
 #main-nav ul li a {
-  font-size: 15px;
+  font-size: 16px;
   text-transform: capitalize;
   color: #fff;
   box-shadow: none;
@@ -232,8 +232,7 @@ header {
 
 .sidebar-navigation .logo img {
   text-decoration: none;
-  color: #000;
-  font-size: 24px;
+  color: #000;  
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -276,7 +275,7 @@ header {
   color: #fff;
   margin-top: 5px;
   text-decoration: none!important;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   text-transform: capitalize;
 }
@@ -588,7 +587,7 @@ header {
 }
 
 #featured .item .image .featured-button a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -756,7 +755,12 @@ header {
   -webkit-transition: all .6s .8s;
   transition: all .6s .8s;
 }
-
+.video-container iframe{
+  width: 100%;
+  height: 520px;
+  display: block;
+  margin: 0 auto;
+}
 /* Tutorial Style */
 
 #tutorial {
@@ -996,7 +1000,7 @@ header {
 #contact input {
   border-radius: 0px;
   padding-left: 15px;
-  font-size: 13px;
+  font-size: 14px;
   color: #aaa;
   background-color: #f4f4f4;
   border: 1px solid #eee;
@@ -1012,7 +1016,7 @@ header {
   border-radius: 0px;
   padding-left: 15px;
   padding-top: 10px;
-  font-size: 13px;
+  font-size: 14px;
   color: #aaa;
   background-color: #f4f4f4;
   border: 1px solid #eee;
@@ -1136,6 +1140,10 @@ header {
   #featured .owl-nav .owl-next span, #featured .owl-nav .owl-prev span {
     display: block;
   }
+
+  .video-container iframe{
+    height: 320px;
+  }
 }
 
 
@@ -1222,6 +1230,9 @@ header {
   #video {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .video-container iframe{
+    height: 320px;
   }
   #tutorial .row{
     padding: 80px 20px;

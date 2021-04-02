@@ -7,7 +7,7 @@ https://templatemo.com/tm-518-sentra
 */
 
 :root{
-  --blue: #072146;
+  --yellow: rgb(244, 183, 0);;
   --azul1: #7498CF;
   --azul2: #113985;
 }
@@ -87,7 +87,7 @@ p {
 .section-heading em {
   font-style: normal;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 .section-heading p {
@@ -102,7 +102,7 @@ p {
 .white-button a {
   font-size: 14px;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--yellow);
   text-transform: capitalize;
   background-color: #fff;
   display: inline-block;
@@ -115,7 +115,7 @@ p {
 }
 
 .white-button a:hover {
-  background-color: var(--blue);
+  background-color: var(--yellow);
   color: #fff;
 }
 
@@ -124,7 +124,7 @@ p {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: var(--blue);
+  background-color: var(--yellow);
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -136,7 +136,7 @@ p {
 
 .accent-button a:hover {
   background-color: #fff;
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 header {
@@ -239,7 +239,7 @@ header {
   height: 100px;
   width: 100%;
   display: inline-block;
-  /* border: 1px solid var(--blue); */
+  /* border: 1px solid var(--yellow); */
 }
 
 .sidebar-navigation .logo em {
@@ -287,7 +287,7 @@ header {
   top: -1px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid var(--yellow);
   transition: all 0.3s;
 }
 .rect{
@@ -295,7 +295,6 @@ header {
   width: 0px;
   left: 0;
   bottom: 5.5px;
-  background-color: #fff;
   -webkit-transition: -webkit-transform 0.1s, width 0.6s;
   -moz-transition: -webkit-transform 0.1s, width 0.6s;
   transition: transform 0.1s, width 0.6s;
@@ -307,13 +306,13 @@ header {
   color: #fff;
 }
 .sidebar-navigation nav a:hover span, nav .active-section span{
-  background-color: #ddd;
+  background-color: var(--yellow);
 }
 .sidebar-navigation nav .active-section .rect{
   width: 30px;
 }
 .sidebar-navigation nav .active-section .circle{
-  background-color: #fff;
+  background-color: var(--yellow);
 }
 
 .sidebar-navigation .social-icons {
@@ -342,7 +341,7 @@ header {
 }
 
 .sidebar-navigation .social-icons li a:hover {
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 
@@ -525,7 +524,7 @@ header {
 }
 
 #featured .owl-dots .active span {
-  background-color: var(--blue)!important;
+  background-color: var(--yellow)!important;
 }
 
 #featured .owl-dots button {
@@ -562,7 +561,7 @@ header {
 }
 
 #featured .owl-nav span:hover {
-  background-color: var(--blue);
+  background-color: var(--yellow);
   color: #fff;
 }
 
@@ -592,7 +591,7 @@ header {
   color: #fff;
   text-align: center;
   text-transform: capitalize;
-  background-color: var(--blue);
+  background-color: var(--yellow);
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -795,7 +794,7 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--blue);
+  background: var(--yellow);
   color:  #f4f4f4;
   font-weight: 700;
   position: absolute;
@@ -807,7 +806,7 @@ header {
 }
 
 #tutorial .row:nth-child(odd) .section-heading .circle-tutorial{
-  background: #f4f4f4;
+  background: var(--yellow);
   color: rgba(12,12,12,0.9);
   left: 0;
 }
@@ -823,7 +822,7 @@ header {
 #tutorial .row:nth-child(odd) .section-heading em {
   font-style: normal;
   font-weight: 700;
-  color: #fff;
+  color: var(--yellow);
 }
 #tutorial .row:nth-child(odd) .text-content p{
   color: #f4f4f4;
@@ -853,7 +852,7 @@ header {
 }
 
 #tutorial .row:nth-child(odd) .arrow-down i{
-  color: #f4f4f4;
+  color: var(--yellow);
 }
 
 
@@ -881,7 +880,7 @@ header {
   height: 90px;
   width: 100%;
   background-color: #eee;
-  border-bottom: 10px solid var(--blue);
+  border-bottom: 10px solid var(--yellow);
 }
 
 #blog .tabs li {
@@ -907,7 +906,7 @@ header {
 }
 
 #blog .tabs a:hover {
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 
@@ -916,7 +915,7 @@ header {
 }
 
 #blog .tabs .active {
-  background-color: var(--blue);
+  background-color: var(--yellow);
   color: #fff;
 }
 
@@ -1003,7 +1002,7 @@ header {
   font-size: 14px;
   color: #aaa;
   background-color: #f4f4f4;
-  border: 1px solid #eee;
+  border: 1px solid #aaa;
   outline: none;
   box-shadow: none;
   line-height: 40px;
@@ -1019,7 +1018,7 @@ header {
   font-size: 14px;
   color: #aaa;
   background-color: #f4f4f4;
-  border: 1px solid #eee;
+  border: 1px solid #aaa;
   outline: none;
   box-shadow: none;
   height: 200px;
@@ -1035,9 +1034,10 @@ header {
   border-radius: 0px;
   font-weight: 600;
   color: #fff;
-  text-transform: capitalize;
-  background-color: var(--blue);
+  background-color: var(--yellow);
   display: inline-block;
+  border: 2px solid var(--yellow);
+  text-transform: capitalize;
   height: 44px;
   line-height: 24px;
   outline: none;
@@ -1050,7 +1050,7 @@ header {
 
 #contact button:hover {
   color: #232323;
-  background-color: #f4f4f4;
+  background-color: transparent; 
 }
 
 
@@ -1083,7 +1083,8 @@ header {
 }
 
 .footer__information-h3{
-  color: #fff;
+  color: var(--yellow);
+  font-weight: 700;
 }
 
 .footer__list{

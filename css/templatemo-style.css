@@ -583,7 +583,7 @@ header {
   min-height: 300px;
   max-height: 300px;
   object-fit: cover;
-  filter: brightness(60%);
+  filter: brightness(90%);
 }
 
 #featured .item .image .featured-button a {

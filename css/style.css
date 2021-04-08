@@ -31,7 +31,11 @@
   17.Blog Details CSS
 
 -----------------------------------------------------------------------------------*/
-
+:root{
+  --blue: #072146;
+  --azul1: #7498CF;
+  --azul2: #113985;
+}
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
@@ -126,7 +130,7 @@ a {
 }
 
 a:hover {
-  color: #3EC1D5;
+  color: var(--azul1);
   text-decoration: none;
 }
 
@@ -263,15 +267,18 @@ div#preloader {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.40);
+  height: 80px;
+  background: var(--blue);
   z-index: 9;
 }
 
 .navbar-header a.navbar-brand {
   display: inline-block;
-  height: 70px;
-  padding: 15px 0;
+  width: 70px;
+  padding: 0;
+}
+.navbar-header a.navbar-brand img{
+  width: 100%;
 }
 
 .main-menu ul.navbar-nav li {
@@ -284,7 +291,7 @@ div#preloader {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  padding: 24px 0px;
+  padding: 28px 0px;
   text-transform: capitalize;
   letter-spacing: 1px;
 }
@@ -314,7 +321,7 @@ div#preloader {
 }
 
 .main-menu ul.navbar-nav li a:hover {
-  color: #3EC1D5;
+  color: var(--azul1);
 }
 
 .navbar {
@@ -369,13 +376,6 @@ div#preloader {
   color: #fff;
 }
 
-.main-menu .dropdown ul {
-  background: #000;
-}
-
-.main-menu .dropdown ul li {
-  display: block;
-}
 
 /*--------------------------------*/
 
@@ -384,7 +384,7 @@ div#preloader {
 
 .header-area.stick {
   background-color: rgba(0, 0, 0, 1);
-  height: 70px;
+  height: 80px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -393,7 +393,8 @@ div#preloader {
 
 .stick .navbar-header a.navbar-brand {
   display: inline-block;
-  height: 90px;
+  width: 70px;
+  padding: 0;
 }
 
 .stick .navbar-brand>img {
@@ -404,18 +405,6 @@ div#preloader {
   display: block;
 }
 
-.sticky-logo h1 {
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.sticky-logo h1 span {
-  color: #3ec1d5;
-}
 .stick .main-menu ul.navbar-nav li.active > a::after {
   border: 1px solid #fff;
   bottom: 0px;

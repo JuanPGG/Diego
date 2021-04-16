@@ -222,6 +222,12 @@
   .service-images:hover .overly-text {
     display: none;
   }
+  #tutorial .row{
+    padding: 50px 20px;
+  }
+  #tutorial .section-heading .circle-tutorial{
+    display: none;
+  }
   .portfolio-area {
     padding-top: 0px;
   }

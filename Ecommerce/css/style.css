@@ -1033,7 +1033,7 @@ div#preloader {
 /*  9.review Area
 /*--------------------------------*/
 
-.reviews-area {
+/*.reviews-area {
   background: url(../img/background/bg1.jpg);
   overflow: hidden;
   background-repeat: no-repeat;
@@ -1093,6 +1093,123 @@ div#preloader {
 
 .single-awesome-4 .add-actions {
   padding: 10px 20px;
+}
+*/
+#tutorial {
+  text-align: left;
+  overflow: hidden;
+  padding-top: 0;
+  background: url(../img/background/bg1.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+#tutorial .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  position: relative;
+}
+#tutorial .row:nth-child(odd){
+  background-color: rgba(12,12,12,0.9);
+  flex-direction: row;
+}
+
+#tutorial .row:nth-child(even){
+  background-color: #f4f4f4;
+  flex-direction: row-reverse;
+}
+
+
+#tutorial .section-heading {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+}
+.section-heading-title{
+  width: 100%;
+  text-align: center;
+}
+.section-heading h1{
+  color: #f4f4f4;
+}
+.section-heading h3 {
+  margin-top: 0px;
+  font-size: 32px;
+  color: #232323;
+  display: inline-block;
+  font-weight: 700;
+}
+
+#tutorial .section-heading .circle-tutorial{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  color:  #f4f4f4;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tutorial .row:nth-child(odd) .section-heading .circle-tutorial{
+  background: #f4f4f4;
+  color: rgba(12,12,12,0.9);
+  left: 0;
+}
+
+#tutorial .row:nth-child(odd) .section-heading h3 {
+  margin-top: 0px;
+  color: #f4f4f4;
+  display: inline-block;
+}
+
+#tutorial .row:nth-child(odd) .section-heading em {
+  font-style: normal;
+  font-weight: 900;
+  color: #fff;  
+}
+#tutorial .row:nth-child(even) .section-heading em {
+  font-style: normal;
+  font-weight: 900;
+  color: #000;  
+}
+#tutorial .row:nth-child(odd) .text-content p{
+  color: #f4f4f4;
+}
+
+#tutorial .box-tutorial{
+  width: 100%;
+}
+
+#tutorial .image-tutorial{
+  width: 100%;
+  object-fit: contain;
+}
+
+#tutorial .arrow-down{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  font-size: 32px;
+  animation: arrowMove 600ms linear alternate infinite;
+  cursor: pointer;
+}
+
+#tutorial .row:nth-child(odd) .arrow-down i{
+  color: #f4f4f4;
 }
 
 /*----------------------------------------

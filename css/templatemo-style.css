@@ -72,7 +72,7 @@ p {
   margin-bottom: 60px;
 }
 
-.section-heading .circle-tutorial{
+.section-heading .circle-working{
   font-size: 28px;
 }
 
@@ -761,37 +761,37 @@ header {
   display: block;
   margin: 0 auto;
 }
-/* Tutorial Style */
+/* working Style */
 
-#tutorial {
+#working {
   text-align: left;
   overflow: hidden;
   padding-top: 0;
 }
-#tutorial .row{
+#working .row{
   display: flex;
   flex-wrap: wrap;
   padding: 80px 60px;
   position: relative;
 }
-#tutorial .row:nth-child(odd){
+#working .row:nth-child(odd){
   background-color: rgba(12,12,12,0.9);
   flex-direction: row;
 }
 
-#tutorial .row:nth-child(even){
+#working .row:nth-child(even){
   background-color: #f4f4f4;
   flex-direction: row-reverse;
 }
 
 
-#tutorial .section-heading {
+#working .section-heading {
   margin-bottom: 30px;
   text-align: center;
   position: relative;
 }
 
-#tutorial .section-heading .circle-tutorial{
+#working .section-heading .circle-working{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -806,13 +806,13 @@ header {
   align-items: center;
 }
 
-#tutorial .row:nth-child(odd) .section-heading .circle-tutorial{
+#working .row:nth-child(odd) .section-heading .circle-working{
   background: #f4f4f4;
   color: rgba(12,12,12,0.9);
   left: 0;
 }
 
-#tutorial .row:nth-child(odd) .section-heading h1 {
+#working .row:nth-child(odd) .section-heading h1 {
   margin-top: 0px;
   font-size: 32px;
   color: #f4f4f4;
@@ -820,25 +820,25 @@ header {
   margin-right: 50px;
 }
 
-#tutorial .row:nth-child(odd) .section-heading em {
+#working .row:nth-child(odd) .section-heading em {
   font-style: normal;
   font-weight: 700;
   color: #fff;
 }
-#tutorial .row:nth-child(odd) .text-content p{
+#working .row:nth-child(odd) .text-content p{
   color: #f4f4f4;
 }
 
-#tutorial .box-tutorial{
+#working .box-working{
   width: 100%;
 }
 
-#tutorial .image-tutorial{
+#working .image-working{
   width: 100%;
   object-fit: contain;
 }
 
-#tutorial .arrow-down{
+#working .arrow-down{
   width: 50px;
   height: 50px;
   display: flex;
@@ -852,7 +852,7 @@ header {
   cursor: pointer;
 }
 
-#tutorial .row:nth-child(odd) .arrow-down i{
+#working .row:nth-child(odd) .arrow-down i{
   color: #f4f4f4;
 }
 
@@ -1234,7 +1234,7 @@ header {
   .video-container iframe{
     height: 320px;
   }
-  #tutorial .row{
+  #working .row{
     padding: 80px 20px;
   }
   #blog {

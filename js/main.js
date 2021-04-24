@@ -81,10 +81,11 @@
   var page_scroll = $('a.page-scroll');
   page_scroll.on('click', function(event) {
     var $anchor = $(this);
+    console.log($anchor);
     $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top - 55
+      scrollTop: $($anchor.attr('href')).offset().top - 50
     }, 1500, 'easeInOutExpo');
-    event.preventDefault();
+    // event.preventDefault();
   });
 
   /*--------------------------

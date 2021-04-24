@@ -550,7 +550,6 @@ div#preloader {
 .services-details:hover .services-icon {
   color: #072146;
 }
-
 .row.second-row {
   margin-top: 40px;
 }
@@ -569,7 +568,15 @@ div#preloader {
   color: #333;
   font-size: 14px;
 }
-
+.single-services ul {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 8px;
+}
+.single-services ul li{
+  text-align: left;
+}
 /*----------------------------------------
   5.Skill Area
 ----------------------------------------*/
@@ -952,11 +959,18 @@ div#preloader {
 }
 
 .team-img {
+  /*background-color: rgba(0, 0, 0, 0.6);*/
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;    
+  padding: 20px;
+  min-height: 240px;
 }
 
 .team-img > a {
@@ -1037,7 +1051,7 @@ div#preloader {
 /*  9.review Area
 /*--------------------------------*/
 
-.reviews-area {
+/*.reviews-area {
   background: url(../img/background/bg1.jpg);
   overflow: hidden;
   background-repeat: no-repeat;
@@ -1098,37 +1112,43 @@ div#preloader {
 
 .single-awesome-4 .add-actions {
   padding: 10px 20px;
-}
+}*/
 
 /*--------------------------------*/
 
-/*  Section tutorial
+/*  Section working
 /*--------------------------------*/
 
-#tutorial {
+#working {
   text-align: left;
   overflow: hidden;
   padding-top: 0;
-  background: url(../img/background/bg1.jpg);
   overflow: hidden;
+  background: url(../img/background/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
 }
-#tutorial .row{
+#working .row{
   display: flex;
   flex-wrap: wrap;
   position: relative;
   background-color: rgba(12,12,12,0.9);
   flex-direction: row;
+  align-items: center;
 }
 
-#tutorial .section-heading {
+#working .section-heading {
   text-align: center;
   position: relative;
   font-size: 32px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 .section-heading-title{
   width: 100%;
@@ -1150,11 +1170,11 @@ div#preloader {
   text-transform: uppercase;
   text-align: left;
 }
-#tutorial .box-tutorial{
+#working .box-working{
   width: 100%;
 }
 
-#tutorial .image-tutorial{
+#working .image-working{
   width: 100%;
   object-fit: contain;
 }
@@ -1704,11 +1724,18 @@ div#preloader {
 .suscribe-text h3 {
   color: #fff;
   display: inline-block;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.suscribe-text p {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .sus-btn {

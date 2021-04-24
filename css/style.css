@@ -1,4 +1,4 @@
-/*
+    /*
   Theme Name: eBusiness
   Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
   Author: BootstrapMade.com
@@ -1062,7 +1062,7 @@ div#preloader {
   float: right;
   height: 100%;
   overflow: hidden;
-  padding: 71px 0;
+  padding: 71px 30px;
   width: 50%;
   position: absolute;
   right: 0;
@@ -1105,7 +1105,6 @@ div#preloader {
 /*  Section tutorial
 /*--------------------------------*/
 
-
 #tutorial {
   text-align: left;
   overflow: hidden;
@@ -1120,82 +1119,37 @@ div#preloader {
 #tutorial .row{
   display: flex;
   flex-wrap: wrap;
-  padding: 80px 60px;
   position: relative;
-}
-#tutorial .row:nth-child(even){
   background-color: rgba(12,12,12,0.9);
   flex-direction: row;
 }
 
-#tutorial .row:nth-child(odd){
-  background-color: #f4f4f4;
-  flex-direction: row-reverse;
-}
-
-
 #tutorial .section-heading {
-  margin-bottom: 30px;
   text-align: center;
   position: relative;
   font-size: 32px;
+  padding: 20px;
 }
 .section-heading-title{
   width: 100%;
   text-align: center;
-}
-.section-heading h1{
-  color: #f4f4f4;
-}
-.section-heading h3 {
-  margin-top: 0px;
-  font-size: 32px;
-  color: #232323;
-  display: inline-block;
+} 
+
+.section-heading h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
   font-weight: 700;
 }
 
-#tutorial .section-heading .circle-tutorial{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #000;
-  color:  #f4f4f4;
-  font-weight: 700;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section-heading li {
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 0;
+  text-transform: uppercase;
+  text-align: left;
 }
-
-#tutorial .row:nth-child(even) .section-heading .circle-tutorial{
-  background: #f4f4f4;
-  color: rgba(12,12,12,0.9);
-  left: 0;
-}
-
-#tutorial .row:nth-child(even) .section-heading h3 {
-  margin-top: 0px;
-  color: #f4f4f4;
-  display: inline-block;
-}
-
-#tutorial .row:nth-child(even) .section-heading em {
-  font-style: normal;
-  font-weight: 900;
-  color: #fff;  
-}
-#tutorial .row:nth-child(odd) .section-heading em {
-  font-style: normal;
-  font-weight: 900;
-  color: #000;  
-}
-#tutorial .row:nth-child(even) .text-content p{
-  color: #f4f4f4;
-}
-
 #tutorial .box-tutorial{
   width: 100%;
 }
@@ -1204,25 +1158,6 @@ div#preloader {
   width: 100%;
   object-fit: contain;
 }
-
-#tutorial .arrow-down{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  font-size: 32px;
-  animation: arrowMove 600ms linear alternate infinite;
-  cursor: pointer;
-}
-
-#tutorial .row:nth-child(even) .arrow-down i{
-  color: #f4f4f4;
-}
-
 /*----------------------------------------
  10.Portfolio Area Css
 ----------------------------------------*/

@@ -5,6 +5,13 @@ window.intlTelInput(input, {
   // any initialisation options go here
 });
 
+input.addEventListener("countrychange", function() {
+  var iti = window.intlTelInputGlobals.getInstance(document.querySelector("#phone"));
+  var element = iti.getSelectedCountryData();
+  console.log()
+  document.getElementById("dial").value = "+"+element.dialCode;
+});
+
 
 
 function grafica(){
@@ -12,11 +19,11 @@ function grafica(){
     labels: ['Bonos Extranjeros', 'Criptoactivos', 'Factoring Latam y USA', 'Mercado Inmobiliario', 'Factoring Internacional', 'Divisas','Fondos Satélite'],
     datasets: [{
       label: '%',
-      borderColor: "#072146",
-      backgroundColor: ["#072146","#072146","#072146","#072146","#072146","#072146","#072146"],
-      borderWidth: 1,
-      radius: 0,
-      data: [5,7,9,11,13,16,27,29],
+      backgroundColor:["#0CCBF7", "#007DE0","#126dec", "#1261cf","#0f4ea5", "#0c4391","#072146"],
+      borderWidth: 2,
+      borderRadius: 5,
+      borderSkipped: false,
+      data: [5,7,9,11,13,16,27],
     }]
   };
   var delayed
@@ -40,16 +47,13 @@ function grafica(){
     animation,
     plugins: {
       legend: {
-        position: 'top',
-      },
-      title: {
-        display: false
+        position: 'right',
       }
     }
   };
 
   var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: data_,
     options: config
   });

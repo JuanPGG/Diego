@@ -2886,3 +2886,42 @@ overflow: hidden;
   }
   
 }
+.iconos{
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  padding: 4px;
+}
+.iconos i{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 4px;
+  font-size: 26px;
+  background: #fff;
+  box-shadow: 1px 1px 6px 0 #444;
+}
+.iconos .fa-telegram{
+  color: #0af;
+}
+.iconos .fa-whatsapp{
+  color: #4f5;
+}
+
+@media (max-width: 767px) {
+  .ml-2 {
+    margin-left: 30px;
+  }
+  .iconos{
+    flex-direction: column;
+  }
+  .iconos i{
+    margin: 4px 0;
+  }
+}
+

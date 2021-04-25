@@ -34,7 +34,9 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- Responsive Stylesheet File -->
+  <!-- Responsive Stylesheet File --> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css" integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg==" crossorigin="anonymous" />
+
   <link href="css/responsive.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -81,16 +83,13 @@
                     <a class="page-scroll" href="#home">Inicio</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">Presentación</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#services">Pilares Financieros</a>
+                    <a class="page-scroll" href="#about">Pilares Financieros</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#team">Alianzas</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" href="#portfolio">Portafolio</a>
                   </li>
                   <!-- <li>
                     <a class="page-scroll" href="#blog">Blog</a>
@@ -375,32 +374,7 @@
   <!-- End Faq Area -->
 
   <!-- Start Wellcome Area -->
-  <div class="wellcome-area">
-    <div class="well-bg">
-      <div class="test-overly"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="wellcome-text">
-              <div class="well-text text-center">
-                <h2>Welcome To Our AdvisorUp</h2>
-                <p>
-                  Busuness Lorem ipsum dolor sit amet, consectetur adipiscing elit.luctus est eget congue.
-                </p>
-                <div class="subs-feilds">
-                  <div class="suscribe-input">
-                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
-                    <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
-                    <div id="msg_Submit" class="h3 text-center hidden"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!-- End Wellcome Area -->
   <div class="suscribe-area" id="abundancia">
     <div class="container">
@@ -596,64 +570,21 @@
         </div>
       </div>
     </div> -->
-    
-  <div class="suscribe-area" id="asesor">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-          <div class="suscribe-text text-center">
-            <h3>Conviertete en un asesor</h3>
-            <!-- <a class="sus-btn" href="#">Get A quate</a> -->
-            <p>Creación y estructuación de planes financieros y jurídicos</p>
-          </div>
+   
+  <!-- Start portfolio Area -->
+  <div id="#portfolio"  class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>Portafolio</h2>
         </div>
       </div>
     </div>
-  </div>
-    <div id="working">
-      <div class="row working">
-            <div class="col-md-6">
-                <div class="box-working">
-                    <img class="image-working" src="img/about/2.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="section-heading">
-                     <h2>Trabaja con nosotros</h2>
-                      <ul>
-                        <li>
-                          <i class="fa fa-check"></i> Educación financiera y jurídica
-                        </li>
-                        <li>
-                          <i class="fa fa-check"></i> Creación de proyecciones financieras
-                        </li>
-                        <li>
-                          <i class="fa fa-check"></i> Creación y dirección de equipos de alto rendimiento
-                        </li>
-                        <li>
-                          <i class="fa fa-check"></i> Liderazgo, desarrollo interno y externo
-                        </li>
-                        <li>
-                          <i class="fa fa-check"></i> Oportunidades de inversión en Criptomonedas
-                        </li>
-                        <li>
-                          <i class="fa fa-check"></i> Desarrollo de habilidades sociales y negociación de alto nivel  
-                        </li>
-                      </ul>
-                      <a href="#contact" class="ready-btn">Contact us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-  <!-- End reviews Area -->
 
-  <!-- Start portfolio Area -->
-  <!-- <div class="container">
-    <h2>Chart.js Responsive Bar Chart Demo</h2>
-    <div>
-      <canvas id="canvas"></canvas>
-    </div>
-  </div> -->
+    <div style="margin-bottom: 50px;">
+      <canvas id="myChart" style="width: 100%; height: 350px;"></canvas>
+        </div>
+  </div>
   <!-- awesome-portfolio end -->
   <!-- start pricing area -->
 
@@ -710,23 +641,56 @@
     </div>
   </div>
   <!-- End Testimonials -->
-  <!-- Start Blog Area -->
 
-  <!-- End Blog -->
-  <!-- Start Suscrive Area -->
-  <div class="suscribe-area">
+  <div class="suscribe-area" id="asesor">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
           <div class="suscribe-text text-center">
-            <h3>Welcome to our AdvisorUp company</h3>
-            <a class="sus-btn" href="#">Get A quate</a>
+            <h3>Conviertete en un asesor</h3>
+            <!-- <a class="sus-btn" href="#">Get A quate</a> -->
+            <p>Creación y estructuación de planes financieros y jurídicos</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Suscrive Area -->
+    <div id="working">
+      <div class="row working">
+            <div class="col-md-6">
+                <div class="box-working">
+                    <img class="image-working" src="img/about/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="section-heading">
+                     <h2>Trabaja con nosotros</h2>
+                      <ul>
+                        <li>
+                          <i class="fa fa-check"></i> Educación financiera y jurídica
+                        </li>
+                        <li>
+                          <i class="fa fa-check"></i> Creación de proyecciones financieras
+                        </li>
+                        <li>
+                          <i class="fa fa-check"></i> Creación y dirección de equipos de alto rendimiento
+                        </li>
+                        <li>
+                          <i class="fa fa-check"></i> Liderazgo, desarrollo interno y externo
+                        </li>
+                        <li>
+                          <i class="fa fa-check"></i> Oportunidades de inversión en Criptomonedas
+                        </li>
+                        <li>
+                          <i class="fa fa-check"></i> Desarrollo de habilidades sociales y negociación de alto nivel  
+                        </li>
+                      </ul>
+                      <a href="#contact" class="ready-btn">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- End reviews Area -->
   <!-- Start contact Area -->
   <div id="contact" class="contact-area">
     <div class="contact-inner area-padding">
@@ -746,8 +710,8 @@
               <div class="single-icon">
                 <i class="fa fa-mobile"></i>
                 <p>
-                  Call: +1 5589 55488 55<br>
-                  <span>Monday-Friday (9am-5pm)</span>
+                  Tel: +1 5589 55488 55<br>
+                  <span>Lunes-Viernes (9am-5pm)</span>
                 </p>
               </div>
             </div>
@@ -758,8 +722,8 @@
               <div class="single-icon">
                 <i class="fa fa-envelope-o"></i>
                 <p>
-                  Email: info@example.com<br>
-                  <span>Web: www.example.com</span>
+                  Correo: support@advisorup.co<br>
+                  <span>Web: www.advisorup.co</span>
                 </p>
               </div>
             </div>
@@ -770,7 +734,7 @@
               <div class="single-icon">
                 <i class="fa fa-map-marker"></i>
                 <p>
-                  Location: Bogotá D.C<br>
+                  Ubicación: Bogotá D.C<br>
                   <!-- <span>NY 535022, USA</span> -->
                 </p>
               </div>
@@ -782,9 +746,8 @@
           <!-- Start Google Map -->
           <div class="col-md-6 col-sm-6 col-xs-12">
             <!-- Start Map -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
-              width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.5164107565!2d-74.2478938043006!3d4.648283717342738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1619301390861!5m2!1ses!2sco" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+          
             <!-- End Map -->
           </div>
           <!-- End Google Map -->
@@ -806,6 +769,11 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
+                  <input style="width: 100% !important;" type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono"
+                    data-rule="tel" data-msg="Por favor entra un telefono válido" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
                     data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validation"></div>
@@ -815,7 +783,7 @@
                     data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
               </form>
             </div>
           </div>
@@ -831,7 +799,7 @@
     <div class="footer-area">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-8 col-sm-8 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
@@ -839,10 +807,9 @@
 
                 </div>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <p>Somos un fondo de inversión mixto con el objetivo de ofrecer a nuestros clientes una oportunidad de crear planes financieros estables en banca privada con tipos de interés, simple y compuesto.</p>
                 <div class="footer-icons">
-                  <ul>
+                  <!-- <ul>
                     <li>
                       <a href="#"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -855,7 +822,7 @@
                     <li>
                       <a href="#"><i class="fa fa-pinterest"></i></a>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -865,19 +832,17 @@
             <div class="footer-content">
               <div class="footer-head">
                 <h4>Información</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
+                
                 <div class="footer-contacts">
                   <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-                  <p><span>Working Hours:</span> 9am-5pm</p>
+                  <p><span>Correo:</span> support@advisorup.co</p>
+                  <p><span>Horario:</span> 9am-5pm</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <!-- <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <h4>Instagram</h4>
@@ -891,7 +856,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -930,9 +895,11 @@
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script> -->
-  <!-- <script src="js/grafica.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script> 
   <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+   <script src="js/grafica.js"></script>
 </body>
 
 </html>

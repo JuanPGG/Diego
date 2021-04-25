@@ -1,24 +1,55 @@
-var dData = function() {
-  return Math.round(Math.random() * 90) + 10
+
+var ctx = document.getElementById("myChart").getContext("2d");
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+  // any initialisation options go here
+});
+
+
+
+const data_ = {
+  labels: ['Bonos Extranjeros', 'Criptoactivos', 'Factoring Latam y USA', 'Mercado Inmobiliario', 'Factoring Internacional', 'Divisas','Fondos Satélite'],
+  datasets: [{
+    label: '%',
+    borderColor: "#072146",
+    backgroundColor: ["#072146","#072146","#072146","#072146","#072146","#072146","#072146"],
+    borderWidth: 1,
+    radius: 0,
+    data: [5,7,9,11,13,16,27,29],
+  }]
+};
+var delayed
+const animation = {
+  onComplete: () => {
+    delayed = true;
+  },
+  delay: (context) => {
+    let delay = 0;
+    if (context.type === 'data' && context.mode === 'default' && !delayed) {
+      delay = context.dataIndex * 300 + context.datasetIndex * 100;
+    }
+    return delay;
+  },
+  
 };
 
-var barChartData = {
-  labels: ["dD 1", "dD 2", "dD 3", "dD 4", "dD 5", "dD 6", "dD 7", "dD 8", "dD 9", "dD 10"],
-  datasets: [{
-    fillColor: "rgba(0,60,100,1)",
-    strokeColor: "black",
-    data: [dData(), dData(), dData(), dData(), dData(), dData(), dData(), dData(), dData(), dData()]
-  }]
-}
 
-var index = 11;
-var ctx = document.getElementById("canvas").getContext("2d");
-var barChartDemo = new Chart(ctx).Bar(barChartData, {
-  responsive: true,
-  barValueSpacing: 2
+const config = {
+  responsive:true,
+  animation,
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: false
+    }
+  }
+};
+
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: data_,
+  options: config
 });
-setInterval(function() {
-  barChartDemo.removeData();
-  barChartDemo.addData([dData()], "dD " + index);
-  index++;
-}, 3000);
+

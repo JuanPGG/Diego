@@ -204,6 +204,12 @@
     padding: 14px 10px;
     width: 40%;
   }
+  .suscribe-text h3{
+    font-size: 16px;
+  }
+  .suscribe-text p{
+    font-size: 14px;
+  }
   .section-headline h3 {
     font-size: 25px;
   }

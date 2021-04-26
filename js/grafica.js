@@ -19,7 +19,7 @@ function grafica(){
     labels: ['Bonos Extranjeros', 'Criptoactivos', 'Factoring Latam y USA', 'Mercado Inmobiliario', 'Factoring Internacional', 'Divisas','Fondos Satélite'],
     datasets: [{
       label: '%',
-      backgroundColor:["#0CCBF7", "#007DE0","#126dec", "#1261cf","#0f4ea5", "#0c4391","#072146"],
+      backgroundColor:["#a4c0ff", "#6795fd","#3a6ddf", "#2755bd","#1c4399", "#0c4391","#072146"],
       borderWidth: 2,
       borderRadius: 5,
       borderSkipped: false,

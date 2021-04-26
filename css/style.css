@@ -2908,9 +2908,12 @@ overflow: hidden;
 }
 .iconos .fa-telegram{
   color: #0af;
+  cursor: pointer;
 }
-.iconos .fa-whatsapp{
-  color: #4f5;
+.iconos .fa-instagram{
+  color: rgb(226, 134, 59);
+  cursor: pointer;
+
 }
 
 @media (max-width: 767px) {

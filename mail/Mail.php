@@ -51,6 +51,10 @@ class Mail{
             return null;
         }
     }
+
+    public function GetDate(){
+        return $this->date;
+    }
     
     private function setMessage($key,$message)
     {

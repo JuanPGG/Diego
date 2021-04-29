@@ -988,7 +988,9 @@ div#preloader {
   width: 100%;
   opacity: 0;
 }
-
+.team-img img {
+  filter: brightness(0) invert(1);
+}
 .team-social-icon {
   left: 50%;
   margin-left: -61px;

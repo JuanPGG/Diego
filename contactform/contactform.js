@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
-      action = 'https://advisorup.co/mail/send.php';
+      action = 'http://https://advisorup.co/mail/send.php';
     }
     $.ajax({
       type: "POST",

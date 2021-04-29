@@ -1,23 +1,19 @@
 <?php
-Class SaveMail{
+class SaveMail{
 
 	protected $user = 'root';
 	protected $pass = '';
+	private $pdo;
 
 	public function __construct($nombre, $email, $telefono, $mensaje, $fecha){
-		try {
-		    $mbd = new PDO('mysql:host=localhost;dbname=advisorup', $user, $pass);
-		    saveData($nombre, $email, $telefono, $mensaje, $fecha);
-		} catch (PDOException $e) {
-		    die();
-		}
+		$this->pdo = new PDO('mysql:host=localhost;dbname=advisorup', "root", "");
+		$this->saveData($nombre, $email, $telefono, $mensaje, $fecha);
 	}
 
 
-	public function saveData($nombre, $email, $telefono, $mensaje, $fecha){
+	private function saveData($nombre, $email, $telefono, $mensaje, $fecha){
 		$sql = "INSERT INTO mail (nombre, email, telefono, mensaje, fecha) VALUES (?,?,?,?,?)";
-		$stmt= $pdo->prepare($sql);
+		$stmt= $this->pdo->prepare($sql);
 		$stmt->execute([$nombre, $email, $telefono, $mensaje, $fecha]);
 	}
 }
-?>

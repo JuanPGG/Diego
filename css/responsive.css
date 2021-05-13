@@ -213,6 +213,10 @@
   .section-headline h3 {
     font-size: 25px;
   }
+  .section-heading p{
+    width: 100%;
+    font-size: 15px;
+  }
   .well-text>h2 {
     font-size: 18px;
   }

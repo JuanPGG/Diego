@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
-      action = 'https://advisorup.co/mail/send.php';
+      action =  location.protocol + "//" + location.host + '/mail/send.php';
     }
     $.ajax({
       type: "POST",
@@ -105,6 +105,7 @@ jQuery(document).ready(function($) {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
+          $('#dial').val("+1")
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");

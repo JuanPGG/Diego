@@ -44,11 +44,53 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-    h1, h2, h3, p, a{
+
+    h1,
+    h2,
+    h3,
+    p,
+    a {
       font-family: 'Roboto Slab', serif;
     }
 
-    </style>
+    /* FONDO VIDEO */
+    .contenido__video {
+      background: transparent;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Estilos para la etiqueta "video" con la calse (.video)  */
+    .video {
+      position: relative;
+      max-width: 300%;
+      width: 100%;
+    }
+
+    /* media queries (personalizarlo a su antojo)*/
+    @media(max-width: 900px) {
+      .video {
+        width: 150%;
+      }
+    }
+
+    @media(max-width: 650px) {
+      .video {
+        width: 280%;
+      }
+    }
+
+    @media(max-width: 480px) {
+      .video {
+        width: 300%;
+      }
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -117,11 +159,15 @@
   <!-- Start Slider Area -->
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
-      <div id="ensign-nivoslider" class="slides">
-        <img src="img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
-        <img src="img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
-        <img src="img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+      <!-- ******* VIDEO FONDO ******* -->
+      <div class= contenido__video">
+        <video class="video" autoplay="autoplay" loop="loop" muted="muted"  >
+          <source src="video/intro.mp4" type="video/mp4" />
+        
+        </video>
+    
       </div>
+      
 
       <!-- direction 1 -->
       <div id="slider-direction-1" class="slider-direction slider-one">
@@ -156,69 +202,68 @@
           </div>
         </div>
       </div>
-
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <br>
-                <br>
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Advisor Up</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Educación financiera</h1>
-                  <!-- <ul>
-                        <li><h3>Creación y estructuración de planes financieros</h3></li>
-                        <li><h3>Sistemas jurídicos</h3></li>
-                        <li><h3>Sistemas financieros</h3></li>
-                    </ul> -->
-                </div>
-                <br>
-                <br>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#asesor">Conviertete en un asesor</a>
-                  <!-- <a class="ready-btn page-scroll" href="#about">Ver Más</a> -->
-                </div>
-              </div>
+   <!-- direction 2 -->
+   <div id="slider-direction-2" class="slider-direction slider-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content text-center">
+            <!-- layer 1 -->
+            <br>
+            <br>
+            <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <h2 class="title1">Advisor Up</h2>
+            </div>
+            <!-- layer 2 -->
+            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+              <h1 class="title2">Educación financiera</h1>
+              <!-- <ul>
+                    <li><h3>Creación y estructuración de planes financieros</h3></li>
+                    <li><h3>Sistemas jurídicos</h3></li>
+                    <li><h3>Sistemas financieros</h3></li>
+                </ul> -->
+            </div>
+            <br>
+            <br>
+            <!-- layer 3 -->
+            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <a class="ready-btn right-btn page-scroll" href="#asesor">Conviertete en un asesor</a>
+              <!-- <a class="ready-btn page-scroll" href="#about">Ver Más</a> -->
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <br>
-                <br>
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Advisor Up</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Plenitud y abundancia</h1>
-                </div>
-                <br>
-                <br>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#abundancia">Abundancia y plenitud</a>
-                  <!-- <a class="ready-btn page-scroll" href="#about">Ver Más</a> -->
-                </div>
-              </div>
+  <!-- direction 3 -->
+  <div id="slider-direction-3" class="slider-direction slider-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content">
+            <!-- layer 1 -->
+            <br>
+            <br>
+            <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <h2 class="title1">Advisor Up</h2>
+            </div>
+            <!-- layer 2 -->
+            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+              <h1 class="title2">Plenitud y abundancia</h1>
+            </div>
+            <br>
+            <br>
+            <!-- layer 3 -->
+            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <a class="ready-btn right-btn page-scroll" href="#abundancia">Abundancia y plenitud</a>
+              <!-- <a class="ready-btn page-scroll" href="#about">Ver Más</a> -->
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
     </div>
   </div>
   <!-- End Slider Area -->
@@ -253,7 +298,7 @@
                 </a> -->
               <p>
                 Somos un fondo de inversión mixto con el objetivo de ofrecer a nuestros clientes una oportunidad de
-                crear planes financieros estables en banca privada con tipos de interés, simple y compuesto. 
+                crear planes financieros estables en banca privada con tipos de interés, simple y compuesto.
                 Nuestro fondo de inversión se encaga de operar en productos bancarios de primera linea para ofrecer una
                 diversificación de portafolio estable y segura para nuestros clientes. </p>
               <ul>
@@ -413,7 +458,7 @@
             <div class="single-team-member">
               <div class="team-img">
                 <a href="#">
-                  <img src="images/logo/logo-union-capital.png" alt="Unión Capital Logo">
+                  <img src="images/logo/logo-union-capital.svg" alt="Unión Capital Logo">
                 </a>
                 <div class="team-social-icon text-center">
                   <ul>
@@ -579,7 +624,7 @@
       </div>
     </div> -->
   <!-- Start Testimonials -->
-  
+
   <!-- End Testimonials -->
   <!-- Start portfolio Area -->
   <div id="portafolio" class="container area-padding">
@@ -626,10 +671,10 @@
       <div class="col-md-6 col-sm-12">
         <div class="section-heading">
           <p>
-              La FCA y la FSC son los entes reguladores más poderosos y estrictos de europa,
-              conoce más del respaldo financiero que ofrece nuestro fondo de inversión
+            La FCA y la FSC son los entes reguladores más poderosos y estrictos de europa,
+            conoce más del respaldo financiero que ofrece nuestro fondo de inversión
           <p>
-          <a href="#contact" class="ready-btn">Contáctenos</a>
+            <a href="#contact" class="ready-btn">Contáctenos</a>
         </div>
       </div>
     </div>
@@ -720,7 +765,7 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group" style="display: none;">
-                  <input type="text" class="form-control" name="dial" id="dial" />
+                  <input type="text" class="form-control" name="dial" id="dial" value="+1" />
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" name="message" rows="5" data-rule="required"

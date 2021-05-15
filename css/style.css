@@ -35,7 +35,14 @@
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
-
+.container{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 .floatleft {
   float: left;
 }
@@ -1858,6 +1865,7 @@ div#preloader {
   line-height: 46px;
   border-radius: 50%;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .single-icon p {

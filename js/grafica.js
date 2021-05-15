@@ -61,12 +61,13 @@ function grafica(){
 }
 
 
-
+let count = 1;
 window.addEventListener('scroll', () => {
   let scrollPage = window.pageYOffset;
   let portafolio = document.getElementById('portafolio').offsetTop;
 
-  if(scrollPage > portafolio - 400){
+  if(scrollPage > portafolio - 400 && count ==1){
     grafica();
+    count++
   }
 })
